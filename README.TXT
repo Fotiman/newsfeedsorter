@@ -5,6 +5,10 @@
 
 Revision History:
 ===================
+1.0.1 (2017-07-08)
+ * Only search for the back to top link to determine whether to sort. Fixes
+   bug where multiple (stale) sort links exist on the page.
+
 1.0.0 (2017-07-07)
  * Initial release
  * This extension only operates on the "Home" page.
