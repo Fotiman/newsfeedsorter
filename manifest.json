@@ -3,7 +3,7 @@
   
   "name": "News Feed Sorter (for Facebook)",
   "description": "Keep your news feed sorted by most recent stories.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   
   "permissions": [ 
     "*://www.facebook.com/*",
