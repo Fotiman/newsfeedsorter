@@ -23,7 +23,11 @@ chrome.extension.sendMessage({}, sortIfNotSorted);
 // Listen for messages from the background page
 chrome.runtime.onMessage.addListener(function (request, sender, callback) {
   if (request.event === "onHistoryStateUpdated") {
+    // Attempt to sort now, but try again in 3 seconds in case we don't catch the correct state
     sortIfNotSorted();
+    setTimeout(function () {
+      sortIfNotSorted();
+    }, 3000);
   }
   callback({farewell: "done"});
 });

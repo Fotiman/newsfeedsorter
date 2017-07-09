@@ -5,6 +5,10 @@
 
 Revision History:
 ===================
+1.0.2 (2017-07-09)
+ * Added an additional attempt to sort 3 seconds after state change to try and
+   catch when the old state is still loaded.
+   
 1.0.1 (2017-07-08)
  * Only search for the back to top link to determine whether to sort. Fixes
    bug where multiple (stale) sort links exist on the page.
